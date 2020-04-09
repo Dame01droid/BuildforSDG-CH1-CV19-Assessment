@@ -1,17 +1,29 @@
 const covid19ImpactEstimator = (data) => data;
+function currentlyInfectedPeople(reportedCases, times) {
+    return reportedCases *times;
 
+}
+function infectionsRequested(currentlyInfected, period) {
+    return currentlyInfected * 2 ** (perriod / 3);
+
+}
+const covid19ImpactEstimator = (data) => {
+    const input = data;
+    const currentlyInfectedImpact =currrentlyInfectedPeople(data.reportedCases, times: 10);
+    const currentlyInfectedSevere =currentlyInfectedPeople(data.reportedCases, times: 50);
+    return {
+        data: input,
+        impact: {
+            currentlyInfected: currentlyInfectedImpact,
+            infectionsByrequetedTime: infectionsRequested(currentlyInfectedImpact, dtaa.timeToElapse)
+        }
+    },
+    severeImpact: {
+        currentlyInfected: currentlyInfectedSevere,
+        infectionsByRequestedTime: infectionsRequested(currentlyInfectedSevere, data.timeToElapse)
+        
+    }
+
+}
 export default covid19ImpactEstimator;
 
-"data"; {
-    "region":   {
-        "name":"Africa",
-        "avgAge": 19.7,
-        "AvgDailyIncomeInUSD": 4,
-        "avgDailyIncomePopulation"; 0.73
-    },
-    "periodType":  "days",
-    "timeToELapse": 38,
-    "reportedCases": 2747,
-    "population": 92931687,
-    "totalHospitalBeds": 678874
-},
