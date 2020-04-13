@@ -1,4 +1,4 @@
-// Challenge 2 
+// Challenge 2
 export function currentlyInfectedPeople(reportedCases, times) {
   return reportedCases * 10 * times;
 }
@@ -48,6 +48,6 @@ export function deriveImpact({ region, ...content }, multiplier = 1) {
     hospitalBedsByRequestedTime,
     casesForICUByRequestedTime,
     casesForVentilatorsByRequestedTime,
-    dollarsInFlight
+    dollarsInFlight,
   };
 }
